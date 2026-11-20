@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1020">
+<title>SpeakSense — Find your voice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">S</span><span>Speak<span class="brand-light">Sense</span></span></a>
+  <nav><a href="#coach">AI Coach</a><a href="#practice">Practice</a><a href="#progress">My Growth</a></nav>
+  <div class="top-pill"><span class="live-dot"></span> Your personal speaking coach</div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="spark">✦</span> COMMUNICATION, BUILT ONE PRACTICE AT A TIME</div>
+    <h1>Your voice.<br><span class="gradient-text">Your superpower.</span></h1>
+    <p class="hero-sub">A kinder way to become a clearer, more confident communicator. Practise, get thoughtful feedback, and see yourself grow.</p>
+    <div class="hero-actions"><a class="btn primary" href="#coach">Start a practice <span>↗</span></a><a class="text-link" href="#how">See how it works <span>↓</span></a></div>
+    <div class="trust-row"><div class="avatars"><i>✦</i><i>◉</i><i>↗</i></div><span>Made for learners, presenters & future leaders</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbital orbit-one"></div><div class="orbital orbit-two"></div>
+    <div class="voice-card">
+      <div class="voice-head"><span class="mini-label">YOUR NEXT CHAPTER</span><span class="wave-icon">〰</span></div>
+      <div class="waveform"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="voice-caption">Every great speaker<br>started with one <em>hello.</em></div>
+      <div class="voice-foot"><span>✦ A little practice goes a long way</span><span class="round-arrow">↗</span></div>
+    </div>
+    <div class="float-chip chip-top"><span class="chip-icon">✧</span><span><b>Personalised</b><small>Feedback that fits you</small></span></div>
+    <div class="float-chip chip-bottom"><span class="chip-icon purple">↗</span><span><b>Progress, not perfection</b><small>Celebrate every improvement</small></span></div>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div><b>01</b><span>Record your voice</span></div><i></i><div><b>02</b><span>Understand your habits</span></div><i></i><div><b>03</b><span>Practise with a plan</span></div><i></i><div><b>04</b><span>Grow at your pace</span></div>
+</section>
+
+<section class="section" id="coach">
+  <div class="section-heading"><div><div class="eyebrow">THE AI COMMUNICATION COACH</div><h2>Let's find your <span class="gradient-text">speaking rhythm.</span></h2><p>Share a short recording. Your coach will turn it into clear, actionable next steps.</p></div><div class="section-number">01 / ASSESS</div></div>
+  <div class="workspace">
+    <div class="record-panel">
+      <div class="panel-top"><div><span class="panel-kicker">YOUR PRACTICE SPACE</span><h3>Make a recording</h3></div><span class="step-tag">STEP 01</span></div>
+      <label class="field-label" for="context">What are you practising today?</label>
+      <select id="context"><option>College presentation</option><option>Job interview</option><option>Public speaking</option><option>Group discussion</option><option>Everyday conversation</option><option>General speaking practice</option></select>
+      <div class="record-box" id="recordBox">
+        <div class="mic-orb" id="micOrb">🎙</div>
+        <h4 id="recordTitle">Ready when you are</h4><p id="recordHint">Record up to 90 seconds or upload an existing clip.</p>
+        <div class="timer" id="timer">00:00</div>
+        <div class="record-actions"><button class="btn record-btn" id="recordBtn"><span class="rec-dot"></span> Start recording</button><label class="btn upload-btn" for="fileInput">↑ Upload clip</label><input id="fileInput" type="file" accept="video/*,audio/*" hidden></div>
+        <div class="record-status" id="recordStatus">Your recording stays in this session and is sent for AI analysis only when you choose Analyse.</div>
+      </div>
+      <div class="selected-file" id="selectedFile" hidden><span>▣</span><span id="fileName">recording.webm</span><button id="removeFile" aria-label="Remove recording">×</button></div>
+      <button class="btn primary full" id="analyzeBtn" disabled>Analyse my speaking <span>✦</span></button>
+      <p class="privacy-note">🔒 Your recording is processed for feedback and is not saved by SpeakSense.</p>
+    </div>
+    <div class="insight-panel">
+      <div class="panel-top"><div><span class="panel-kicker">YOUR PERSONAL COACH</span><h3>What you'll discover</h3></div><span class="spark-large">✦</span></div>
+      <div class="insight-list">
+        <div class="insight"><span class="insight-icon">〰</span><div><b>Speaking pace</b><small>Find a rhythm that feels natural and easy to follow.</small></div></div>
+        <div class="insight"><span class="insight-icon">Aa</span><div><b>Clarity & filler words</b><small>Notice repeated words and make every sentence count.</small></div></div>
+        <div class="insight"><span class="insight-icon">◈</span><div><b>Structure & delivery</b><small>Build a message with a clear beginning, middle and end.</small></div></div>
+        <div class="insight"><span class="insight-icon">↗</span><div><b>Your next best step</b><small>Get small exercises based on what you need most.</small></div></div>
+      </div>
+      <div class="coach-quote"><span>✦</span><p>“You don't have to sound perfect. You just have to keep practising.”</p><small>— Your SpeakSense coach</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section results-section" id="results" hidden>
+  <div class="section-heading"><div><div class="eyebrow">YOUR PERSONAL FEEDBACK</div><h2>Your next step starts <span class="gradient-text">right here.</span></h2><p id="resultSubtitle">A snapshot of your communication today.</p></div><div class="section-number">02 / INSIGHTS</div></div>
+  <div id="resultContent"></div>
+</section>
+
+<section class="section practice-section" id="practice">
+  <div class="section-heading"><div><div class="eyebrow">SMALL STEPS, REAL GROWTH</div><h2>Build confidence through <span class="gradient-text">practice.</span></h2><p>Get a short exercise tailored to the skill you want to strengthen.</p></div><div class="section-number">03 / PRACTISE</div></div>
+  <div class="practice-grid">
+    <div class="practice-intro"><div class="practice-symbol">✳</div><h3>Your next<br>five minutes.</h3><p>No pressure. No judgement. Just one small opportunity to get better.</p><label class="field-label" for="goal">I want to improve</label><select id="goal"><option>Speak more clearly</option><option>Reduce filler words</option><option>Speak at a natural pace</option><option>Structure my thoughts</option><option>Prepare for stage presentations</option><option>Answer interview questions</option></select><label class="field-label" for="level">My current level</label><select id="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select><button class="btn light-btn full" id="generateBtn">Create my practice <span>↗</span></button></div>
+    <div class="practice-output" id="practiceOutput"><div class="empty-practice"><div class="empty-icon">✧</div><h3>Your practice session will appear here.</h3><p>Choose a goal and let your AI coach create a simple, focused exercise.</p></div></div>
+  </div>
+</section>
+
+<section class="section growth-section" id="progress">
+  <div class="section-heading"><div><div class="eyebrow">YOUR JOURNEY</div><h2>Progress is a <span class="gradient-text">practice.</span></h2><p>Your recent sessions are saved locally on this device.</p></div><div class="section-number">04 / GROW</div></div>
+  <div class="growth-card"><div class="growth-left"><span class="panel-kicker">YOUR SPEAKING JOURNEY</span><h3 id="sessionCount">0 practice sessions</h3><p>Every recording is a chance to learn something new. Keep showing up for yourself.</p><div class="growth-progress"><span id="growthBar"></span></div><small id="growthCaption">Your first session is waiting.</small></div><div class="growth-right"><div class="growth-stat"><b id="bestScore">—</b><span>Latest score</span></div><div class="growth-stat"><b id="practiceDays">0</b><span>Sessions completed</span></div></div></div>
+</section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">S</span><span>Speak<span class="brand-light">Sense</span></span></a><span>Find your voice. Grow into it.</span><span>Made for progress, not perfection. ✦</span></footer>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body></html>
